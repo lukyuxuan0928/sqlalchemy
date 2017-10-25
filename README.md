@@ -1,6 +1,6 @@
 # SQLALCHEMY
 
-SQLAlchemy is the Python SQL toolkit and Object Relational Mapper (ORM) that gives application developers the full power and flexibility of SQL.
+SQLAlchemy is the Python SQL toolkit and Object Relational Mapper(ORM) that gives application developers the full power and flexibility of SQL.
 
 ## Getting Started
 
@@ -46,7 +46,7 @@ Third, use the very simple syntax to replace sql statement.
 
 ```
     CRUD
-    
+
     session.execute(insert(schema.student, values=values))
     
     session.query(schema.student).all()
