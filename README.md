@@ -42,19 +42,18 @@ Second, initial the connection to database by using sqlalchemy
 
 ```
 
-Third, use the very simple syntax to replace sql statement.
+Third, use the very simple syntax to replace sql statement(CRUD).
 
 ```
-    CRUD
-
+    # Create
     session.execute(insert(schema.student, values=values))
     
+    # Read
     session.query(schema.student).all()
     
+    # Update
     session.execute(update(schema.student, values=values).where(schema.student.student_id == studentObj.student_id))
 
+    # Delete
     session.query(schema.student).filter_by(schema.student.student_id == student_id).delete()
-
-
-
 ```
