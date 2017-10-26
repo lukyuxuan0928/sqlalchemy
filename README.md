@@ -10,7 +10,7 @@ Here I'm using the MYSQL as my database services. Providing a very simple applic
 
 Before using the sqlalchemy features, you need to install:
 ```
-    1. sudo apt-get install python-sqlalchemy
+    1. $ sudo apt-get install python-sqlalchemy
 ```
 
 ## Example
@@ -56,4 +56,14 @@ Third, use the very simple syntax to replace sql statement(CRUD).
 
     # Delete
     session.query(schema.student).filter_by(schema.student.student_id == student_id).delete()
+```
+
+## Version
+
+Please take note that might minor changes of syntax on different version
+
+```
+    python            == 2.7.12
+    mysql             == 5.7
+    python-sqlalchemy == 1.0.11
 ```
